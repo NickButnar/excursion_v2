@@ -1,0 +1,7 @@
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 150px 50px;
+  font-family: "Poppins", serif;
+  letter-spacing: 0.05em;
+}

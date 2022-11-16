@@ -1,0 +1,28 @@
+.header {
+  max-width: 1440px;
+  height: 700px;
+  text-align: center;
+  background-image: url(/img/header/gruzinski-gori-vid-yakix-perexoplyuye-podix-1\ 1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.header__title {
+  padding-top: 275px;
+  margin-bottom: 30px;
+  font-size: 122px;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+#header__link {
+  padding: 10px 20px;
+  font-size: 24px;
+  background-color: #d2b446;
+  border-radius: 50px;
+  color: #fff;
+}
