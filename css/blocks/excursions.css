@@ -1,0 +1,99 @@
+.excurcions {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(6, auto);
+  column-gap: 50px;
+  row-gap: 200px;
+  grid-template-areas:
+    "excurcions_number excurcions__img excurcions__content"
+    "number_2 content_2 img_2";
+}
+
+.excurcions_number--number_2 {
+  grid-area: number_2;
+}
+
+.excurcions__content--content_2 {
+  grid-area: content_2;
+}
+
+.excurcions__img--img_2 {
+  grid-area: img_2;
+}
+
+.excurcions_number {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 2.25;
+  letter-spacing: 0.05em;
+  color: rgba(210, 180, 70, 0.5);
+}
+
+.excurcions__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: fill;
+}
+
+.excurcions__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 490px;
+  text-align: start;
+  letter-spacing: 0.05em;
+}
+
+.excurcions__header {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.25;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.excurcions__desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  padding-bottom: 40px;
+}
+
+.excurcions__list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  padding-bottom: 55px;
+}
+
+.excurcions__text {
+  margin-bottom: 15px;
+}
+
+.excurcions__text:nth-child(1) {
+  padding-top: 40px;
+}
+
+.excurcions__footer {
+  display: flex;
+  align-items: center;
+  column-gap: 100px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.excurcions__price {
+  font-size: 32px;
+  color: #d2b446;
+}
+
+.excurcions__link {
+  font-size: 24px;
+  padding: 20px;
+  color: #000;
+  background-color: rgba(210, 180, 70, 0.5);
+  border-radius: 50px;
+}

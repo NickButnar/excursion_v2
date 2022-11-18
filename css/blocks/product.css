@@ -1,0 +1,10 @@
+.product {
+  padding-top: 100px;
+}
+.product__title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.5;
+  text-align: center;
+  padding-bottom: 55px;
+}

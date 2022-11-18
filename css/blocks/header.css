@@ -1,7 +1,9 @@
 .header {
+  margin: 0 auto;
+  text-align: center;
   max-width: 1440px;
   height: 700px;
-  text-align: center;
+
   background-image: url(/img/header/gruzinski-gori-vid-yakix-perexoplyuye-podix-1\ 1.png);
   background-repeat: no-repeat;
   background-size: contain;
