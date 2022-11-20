@@ -1,0 +1,33 @@
+.footer {
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  text-align: center;
+}
+.footer__title {
+  font-weight: 600;
+  font-size: 32px;
+}
+.footer__number {
+  padding-top: 35px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.footer__mail {
+  font-weight: 500;
+  font-size: 16px;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+  column-gap: 65px;
+  padding-top: 25px;
+}
+.footer__facebook {
+  max-width: 50px;
+}
+.footer__instagram {
+  max-width: 50px;
+}
+.footer__whats_app {
+  max-width: 50px;
+}
