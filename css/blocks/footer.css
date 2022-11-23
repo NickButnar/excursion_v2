@@ -31,3 +31,19 @@
 .footer__whats_app {
   max-width: 50px;
 }
+
+@media (max-width: 1156px) {
+  .footer__title {
+    font-size: 22px;
+  }
+  .footer__number {
+    font-size: 13px;
+    padding-top: 20px;
+  }
+  .footer__mail {
+    font-size: 13px;
+  }
+  .footer__social img {
+    max-width: 35px;
+  }
+}

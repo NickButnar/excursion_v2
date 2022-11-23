@@ -18,16 +18,16 @@
 }
 
 .excurcions__img {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   border-radius: 15px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .excurcions__content {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
   text-align: start;
   letter-spacing: 0.05em;
 }
@@ -81,6 +81,17 @@
   color: #000;
   background-color: rgba(210, 180, 70, 0.5);
   border-radius: 50px;
+  text-align: center;
+}
+
+.excurcions__link:hover {
+  color: rgb(4, 114, 87);
+  transition: color 01s ease;
+}
+
+.excurcions__link:active {
+  position: relative;
+  top: 1px;
 }
 
 .excurcions_number--number_2 {
@@ -102,7 +113,7 @@
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .excurcions__content--content_2 {
@@ -134,7 +145,7 @@
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .excurcions__content--content_3 {
@@ -166,7 +177,7 @@
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .excurcions__content--content_4 {
@@ -198,7 +209,7 @@
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .excurcions__content--content_5 {
@@ -230,7 +241,7 @@
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .excurcions__content--content_6 {
@@ -241,4 +252,62 @@
   width: 100%;
   text-align: start;
   letter-spacing: 0.05em;
+}
+
+@media (max-width: 1156px) {
+  .excurcions {
+    column-gap: 20px;
+    row-gap: 100px;
+  }
+
+  .excurcions_number {
+    font-size: 54px;
+  }
+
+  .excurcions__img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  .product__title {
+    font-size: 22px;
+    padding-bottom: 30px;
+  }
+
+  .excurcions__header {
+    font-size: 18px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .excurcions__desc {
+    font-size: 13px;
+    padding-bottom: 20px;
+  }
+  .excurcions__list {
+    font-size: 13px;
+    padding-bottom: 0;
+  }
+
+  .excurcions__price {
+    font-size: 20px;
+  }
+  .excurcions__link {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .excurcions__text img {
+    max-width: 18px;
+  }
+
+  .excurcions__text {
+    margin-bottom: 10px;
+  }
+
+  .excurcions__text:nth-child(1) {
+    padding-top: 20px;
+  }
 }
