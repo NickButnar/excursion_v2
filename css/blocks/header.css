@@ -38,3 +38,17 @@
   position: relative;
   top: 1px;
 }
+
+@media (max-width: 1156px) {
+  .header {
+    height: 600px;
+  }
+
+  .header__title {
+    font-size: 94px;
+  }
+
+  .header__link {
+    font-size: 20px;
+  }
+}
