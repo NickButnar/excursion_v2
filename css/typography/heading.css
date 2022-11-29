@@ -1,0 +1,103 @@
+.heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000;
+  padding-bottom: 50px;
+}
+
+.heading--primary {
+  font-size: 122px;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  padding: 30px;
+}
+
+.heading--footer {
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #000;
+  padding-bottom: 50px;
+}
+
+.heading--excursion {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
+  padding-bottom: 25px;
+}
+
+.heading--about_name {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: start;
+  line-height: 1.2;
+  color: #000;
+  padding-bottom: 30px;
+}
+
+.heading--about_guide {
+  text-align: start;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
+
+  .heading--primary {
+    font-size: 84px;
+  }
+
+  .heading--excursion {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+  .heading--about_name {
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+
+  .heading--about_guide {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+
+  .heading--footer {
+    font-size: 26px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .heading--primary {
+    font-size: 60px;
+  }
+
+  .heading--excursion {
+    padding: 20px;
+  }
+
+  .heading--about_name {
+    padding: 15px;
+    text-align: center;
+  }
+  .heading--about_guide {
+    text-align: center;
+  }
+}

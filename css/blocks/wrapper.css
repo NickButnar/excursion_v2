@@ -5,3 +5,9 @@
   font-family: "Poppins", serif;
   letter-spacing: 0.05em;
 }
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 150px 50px;
+  }
+}

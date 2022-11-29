@@ -1,15 +1,12 @@
-.desc {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-.desc__title {
+.desc__heading {
   text-align: center;
   font-weight: 600;
   font-size: 26px;
   line-height: 1.2;
   color: #000;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
 }
+
 .desc__grid {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -24,15 +21,15 @@
   object-fit: cover;
 }
 
-.batumi {
+.desc__grid--batumi {
   grid-column: 1 / 3;
 }
 
-.adjaria {
+.desc__grid--adjaria {
   grid-column: 3 / 4;
 }
 
-.text {
+.desc__grid--text {
   grid-column: 4 / 5;
   text-align: start;
   padding-left: 50px;
@@ -43,26 +40,20 @@
   align-items: center;
 }
 
-.sunset {
+.desc__grid--sunset {
   grid-column: 1 / 2;
 }
 
-.square {
+.desc__grid--square {
   grid-column: 2 / 4;
 }
 
-.clouds {
+.desc__grid--village {
   grid-column: 4 / 5;
 }
 
-@media (max-width: 1156px) {
+@media (max-width: 1024px) {
   .desc__grid {
-    display: none;
-  }
-}
-
-@media (min-width: 1157px) {
-  .swiper {
     display: none;
   }
 }

@@ -9,25 +9,25 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="header__title">Аджария</h1>
-      <a href="#excurcions" class="header__link">Смотреть экскурсии</a>
+      <h1 class="heading--primary">Аджария</h1>
+      <a href="#product" class="btn--primary">Смотреть экскурсии</a>
     </header>
 
     <main class="wrapper">
       <div class="desc">
-        <h2 class="desc__title">Почему Вам стоит посетить Аджарию</h2>
+        <h2 class="heading">Почему Вам стоит посетить Аджарию</h2>
         <div class="desc__grid">
           <img
             src="/img/desc/new_batumi.jpg"
             alt="new batumi"
-            class="desc__grid batumi"
+            class="desc__grid--batumi"
           />
           <img
             src="/img/desc/bridge.jpg"
             alt="bridge in ajaria"
             class="desc__grid adjaria"
           />
-          <p class="desc__grid text">
+          <p class="desc__grid--text">
             Аджария является одним из&nbsp;красивейших и&nbsp;древнейших уголков
             Грузии. Край славится уникальным сочетанием природных факторов,
             которые превращают эту область в&nbsp;настоящий рай на&nbsp;Земле.
@@ -38,358 +38,431 @@
           <img
             src="/img/desc/batumi_sunset.jpg"
             alt="batumi sunset"
-            class="desc__grid sunset"
+            class="desc__grid--sunset"
           />
           <img
             src="/img/desc/square.jpg"
             alt="batumi square"
-            class="desc__grid square"
+            class="desc__grid--square"
           />
           <img
             src="/img/desc/village.jpg"
             alt="village in ajaria"
-            class="desc__grid clouds"
+            class="desc__grid--village"
           />
         </div>
       </div>
 
       <!-- swiper -->
 
-      <div class="swiper">
-        <img
-          src="/img/desc/new_batumi.jpg"
-          alt="new batumi"
-          class="swiper__slide"
-        />
-        <img
-          src="/img/desc/bridge.jpg"
-          alt="bridge in ajaria"
-          class="swiper__slide"
-        />
-        <img
-          src="/img/desc/batumi_sunset.jpg"
-          alt="batumi sunset"
-          class="swiper__slide"
-        />
-        <img
-          src="/img/desc/square.jpg"
-          alt="batumi square"
-          class="swiper__slide"
-        />
-        <img
-          src="/img/desc/village.jpg"
-          alt="village in ajaria"
-          class="swiper__slide"
-        />
+      <div class="slider">
+        <div class="swiper">
+          <img
+            src="./img/desc/new_batumi.jpg"
+            alt="new batumi"
+            class="swiper__slide"
+          />
+          <img
+            src="/img/desc/bridge.jpg"
+            alt="bridge in ajaria"
+            class="swiper__slide"
+          />
+          <img
+            src="/img/desc/batumi_sunset.jpg"
+            alt="batumi sunset"
+            class="swiper__slide"
+          />
+          <img
+            src="/img/desc/square.jpg"
+            alt="batumi square"
+            class="swiper__slide"
+          />
+          <img
+            src="/img/desc/village.jpg"
+            alt="village in ajaria"
+            class="swiper__slide"
+          />
+        </div>
+        <div class="slider__nav">
+          <img
+            src="./img/swiper/arrow-left.png"
+            alt="prev"
+            class="slider__prev"
+          />
+          <img
+            src="./img/swiper/arrow-right.png"
+            alt="next"
+            id="slider__next"
+            class="slider__next"
+          />
+        </div>
       </div>
 
-      <section class="product">
-        <h3 class="product__title">Наши экскурсии</h3>
-        <div class="excurcions">
-          <p class="excurcions_number">01</p>
-          <img
-            src="./img/excursions/boat trip 1.png"
-            alt=""
-            class="excurcions__img"
-          />
-          <div class="excurcions__content">
-            <h4 class="excurcions__header">Морская прогулка на&nbsp;яхте</h4>
-            <p class="excurcions__desc">
-              С&nbsp;борта яхты вы&nbsp;увидите красивейшую панораму города
-              Батуми. Получите незабываемые впечатления, купаясь
-              в&nbsp;чистейшей воде вдали от&nbsp;берега, ощущая под собой
-              морскую бездну. Только&nbsp;Вы, безбрежное синее море, шум
-              рассекаемых волн и&nbsp;белоснежный парус!
-            </p>
-            <ul class="excurcions__list">
-              Входит в&nbsp;стоимость:
-              <li class="excurcions__text">
-                <img
-                  src="/img/excursions/icons/strawberry.svg"
-                  alt="strawberry_icon"
-                />
-                Сезонные фрукты и овощи
-              </li>
-              <li class="excurcions__text">
-                <img src="/img/excursions/icons/fish.svg" alt="fish_icon" />
-                Рыбалка
-              </li>
-              <li class="excurcions__text">
-                <img src="/img/excursions/icons/people.svg" alt="people_icon" />
-                От&nbsp;1&nbsp;до&nbsp;6&nbsp;человек
-              </li>
-              <li class="excurcions__text">
-                <img
-                  src="/img/excursions/icons/hourglass.svg"
-                  alt="hourglass_icon"
-                />
-                1 час
-              </li>
-            </ul>
-            <div class="excurcions__footer">
-              <p class="excurcions__price">100&nbsp;$</p>
-              <a href="#!" class="excurcions__link">Заказать экскурсию</a>
+      <section id="product" class="product">
+        <h2 class="heading">Наши экскурсии</h2>
+        <div class="excursion">
+          <p class="excursion__number">01</p>
+          <div class="excursion__line">
+            <img
+              src="./img/excursions/boat trip 1.png"
+              alt="batumi boat excursion"
+              class="excursion__img"
+            />
+            <div class="excursion__content">
+              <h3 class="heading--excursion">Морская прогулка на&nbsp;яхте</h3>
+              <p class="excursion__desc">
+                С&nbsp;борта яхты вы&nbsp;увидите красивейшую панораму города
+                Батуми. Получите незабываемые впечатления, купаясь
+                в&nbsp;чистейшей воде вдали от&nbsp;берега, ощущая под собой
+                морскую бездну. Только&nbsp;Вы, безбрежное синее море, шум
+                рассекаемых волн и&nbsp;белоснежный парус!
+              </p>
+              <ul class="excursion__list">
+                Входит в&nbsp;стоимость:
+                <li class="excursion__text">
+                  <img
+                    src="/img/excursions/icons/strawberry.svg"
+                    alt="strawberry_icon"
+                  />
+                  Сезонные фрукты и овощи
+                </li>
+                <li class="excursion__text">
+                  <img src="/img/excursions/icons/fish.svg" alt="fish_icon" />
+                  Рыбалка
+                </li>
+                <li class="excursion__text">
+                  <img
+                    src="/img/excursions/icons/people.svg"
+                    alt="people_icon"
+                  />
+                  От&nbsp;1&nbsp;до&nbsp;6&nbsp;человек
+                </li>
+                <li class="excursion__text">
+                  <img
+                    src="/img/excursions/icons/hourglass.svg"
+                    alt="hourglass_icon"
+                  />
+                  1 час
+                </li>
+              </ul>
+              <div class="excursion__footer">
+                <p class="excursion__price">$100</p>
+                <a href="https://wa.me/995599918283" class="btn"
+                  >Заказать экскурсию</a
+                >
+              </div>
             </div>
           </div>
-          <p class="excurcions_number">02</p>
-          <img
-            src="./img/excursions/Adzharija 1.png"
-            alt=""
-            class="excurcions__img--img_2"
-          />
-          <div class="excurcions__content">
-            <h4 class="excurcions__header">Горная Аджария</h4>
-            <p class="excurcions__desc">
-              В&nbsp;ходе экскурсии мы&nbsp;посетим древнеримскую крепость
-              Гонио, которая была построена в&nbsp;I веке н.э, арочный мост
-              царицы Тамар, Махунцетский водопад, водопад Андрея Первозванного,
-              а&nbsp;так&nbsp;же Аджарский дом вина. Расскажу Вам историю
-              Аджарии и&nbsp;познакомлю с&nbsp;мифами, легендами, связанными
-              с&nbsp;ущельем Ачара.
-            </p>
-            <ul class="excurcions__list">
-              Входит в&nbsp;стоимость:
-              <li class="excurcions__text">
-                <img src="/img/excursions/icons/car.svg" alt="car_icon" />
-                Трансферные расходы
-              </li>
-              <li class="excurcions__text">
-                <img src="/img/excursions/icons/hotel.svg" alt="hotel_icon" />
-                Встреча и&nbsp;доставка в&nbsp;отель
-              </li>
-              <li class="excurcions__text">
-                <img src="/img/excursions/icons/people.svg" alt="people_icon" />
-                От&nbsp;1&nbsp;до&nbsp;6&nbsp;человек
-              </li>
-              <li class="excurcions__text">
-                <img
-                  src="/img/excursions/icons/hourglass.svg"
-                  alt="hourglass_icon"
-                />
-                5-6 часов
-              </li>
-            </ul>
-            <div class="excurcions__footer">
-              <p class="excurcions__price">100&nbsp;$</p>
-              <a href="#!" class="excurcions__link">Заказать экскурсию</a>
-            </div>
-          </div>
-          <p class="excurcions_number">03</p>
-          <img
-            src="./img/excursions/1627286512_Batumi-Georgien 1.png"
-            alt=""
-            class="excurcions__img--img_3"
-          />
-          <div class="excurcions__content">
-            <h4 class="excurcions__header">
-              Обзорная экскурсия по&nbsp;Батуми
-            </h4>
-            <p class="excurcions__desc">
-              Вы&nbsp;окунетесь в&nbsp;неспешный ритм нашего города,
-              почувствуете его колорит и&nbsp;дыхание. Узнаете много мифов
-              и&nbsp;городских легенд. Непринужденно познакомимся
-              с&nbsp;историей города, его архитектурой и&nbsp;религией. Выпьем
-              настоящий черный кофе приготовленный на&nbsp;песке, посмотрим
-              мастер-класс приготовления известного аджарского хачапури,
-              продегустируем вина и&nbsp;многое другое.
-            </p>
-            <ul class="excurcions__list">
-              Входит в&nbsp;стоимость:
-              <li class="excurcions__text">
-                <img src="/img/excursions/icons/car.svg" alt="car_icon" />
-                Трансферные расходы
-              </li>
-              <li class="excurcions__text">
-                <img src="/img/excursions/icons/hotel.svg" alt="hotel_icon" />
-                Встреча и&nbsp;доставка в&nbsp;отель
-              </li>
-              <li class="excurcions__text">
-                <img src="/img/excursions/icons/people.svg" alt="people_icon" />
-                От&nbsp;1&nbsp;до&nbsp;6&nbsp;человек
-              </li>
-              <li class="excurcions__text">
-                <img
-                  src="/img/excursions/icons/hourglass.svg"
-                  alt="hourglass_icon"
-                />
-                3-4 часа
-              </li>
-            </ul>
-            <div class="excurcions__footer">
-              <p class="excurcions__price">60&nbsp;$</p>
-              <a href="#!" class="excurcions__link">Заказать экскурсию</a>
-            </div>
-          </div>
+        </div>
 
-          <p class="excurcions_number">04</p>
-          <img
-            src="./img/excursions/georgia-batumi-21509 1.png"
-            alt=""
-            class="excurcions__img--img_4"
-          />
-          <div class="excurcions__content">
-            <h4 class="excurcions__header">
-              Пешеходная экскурсия по&nbsp;Батуми
-            </h4>
-            <p class="excurcions__desc">
-              В&nbsp;ходе экскурсии мы&nbsp;увидим с&nbsp;Вами все
-              достопримечательности нашего города. Площади Пьяца и&nbsp;Европы,
-              дом Сабаева, Стеллу Медеи с&nbsp;золотым руном, Театральную
-              плошадь и&nbsp;фонтан Нептуна, парк Чудес, башню грузинского
-              Алфавита, маяк, статуи Али и&nbsp;Нино. Продегустируем грузинские
-              вина и&nbsp;узнаем традиции их&nbsp;изготовления. Прогуляемся
-              по&nbsp;извилистым улочкам старого города. Увидим католический
-              храм пресвятой Богородицы, церковь Николая Угодника, армянскую
-              церковь Христа Всеспасителя. Мечеть Орта Джаме. Посетим Батумский
-              бульвар.
-            </p>
-            <ul class="excurcions__list">
-              Входит в&nbsp;стоимость:
-              <li class="excurcions__text">
-                <img
-                  src="/img/excursions/icons/pedestrian.svg"
-                  alt="pedestrian_icon"
-                />
-                Пешеходная
-              </li>
-              <li class="excurcions__text">
-                <img src="/img/excursions/icons/people.svg" alt="people_icon" />
-                От&nbsp;1&nbsp;до&nbsp;6&nbsp;человек
-              </li>
-              <li class="excurcions__text">
-                <img
-                  src="/img/excursions/icons/hourglass.svg"
-                  alt="hourglass_icon"
-                />
-                2-3 часа
-              </li>
-            </ul>
-            <div class="excurcions__footer">
-              <p class="excurcions__price">40&nbsp;$</p>
-              <a href="#!" class="excurcions__link">Заказать экскурсию</a>
+        <div class="excursion">
+          <p class="excursion__number">02</p>
+          <div class="excursion__line">
+            <img
+              src="./img/excursions/Adzharija 1.png"
+              alt=""
+              class="excursion__img"
+            />
+            <div class="excursion__content">
+              <h3 class="heading--excursion">Горная Аджария</h3>
+              <p class="excursion__desc">
+                В&nbsp;ходе экскурсии мы&nbsp;посетим древнеримскую крепость
+                Гонио, которая была построена в&nbsp;I веке н.э, арочный мост
+                царицы Тамар, Махунцетский водопад, водопад Андрея
+                Первозванного, а&nbsp;так&nbsp;же Аджарский дом вина. Расскажу
+                Вам историю Аджарии и&nbsp;познакомлю с&nbsp;мифами, легендами,
+                связанными с&nbsp;ущельем Ачара.
+              </p>
+              <ul class="excursion__list">
+                Входит в&nbsp;стоимость:
+                <li class="excursion__text">
+                  <img src="/img/excursions/icons/car.svg" alt="car_icon" />
+                  Трансферные расходы
+                </li>
+                <li class="excursion__text">
+                  <img src="/img/excursions/icons/hotel.svg" alt="hotel_icon" />
+                  Встреча и&nbsp;доставка в&nbsp;отель
+                </li>
+                <li class="excursion__text">
+                  <img
+                    src="/img/excursions/icons/people.svg"
+                    alt="people_icon"
+                  />
+                  От&nbsp;1&nbsp;до&nbsp;6&nbsp;человек
+                </li>
+                <li class="excursion__text">
+                  <img
+                    src="/img/excursions/icons/hourglass.svg"
+                    alt="hourglass_icon"
+                  />
+                  5-6 часов
+                </li>
+              </ul>
+              <div class="excursion__footer">
+                <p class="excursion__price">$100</p>
+                <a href="https://wa.me/995599918283" class="btn"
+                  >Заказать экскурсию</a
+                >
+              </div>
             </div>
           </div>
+        </div>
 
-          <p class="excurcions_number">05</p>
-          <img
-            src="./img/excursions/Kanon-Martvili 1.png"
-            alt=""
-            class="excurcions__img--img_5"
-          />
-          <div class="excurcions__content">
-            <h4 class="excurcions__header">
-              Пещера&nbsp;Прометея. Каньон&nbsp;Мартвили. Монастырь&nbsp;Гелати
-            </h4>
-            <p class="excurcions__desc">
-              В ходе эскурсии&nbsp;посетим карстовую пещеру Прометея. Пешеходный
-              туристический маршрут 1420 метров.&nbsp;8&nbsp;залов. Увидим
-              каньон Окаце. Длина которого 16&nbsp;километров. Посетим монастырь
-              Гелати, построенный в XII&nbsp;веке, &nbsp;котором похоронено
-              23&nbsp;царя Грузии. Увидим храм Богородицы, церковь Николая
-              Угодника и Георгия Победоносца. Прикоснемся к&nbsp;древней истории
-              Грузии
-            </p>
-            <ul class="excurcions__list">
-              Входит в&nbsp;стоимость:
-              <li class="excurcions__text">
-                <img src="/img/excursions/icons/car.svg" alt="car_icon" />
-                Трансферные расходы
-              </li>
-              <li class="excurcions__text">
-                <img src="/img/excursions/icons/hotel.svg" alt="hotel_icon" />
-                Встреча и&nbsp;доставка в&nbsp;отель
-              </li>
-              <li class="excurcions__text">
-                <img src="/img/excursions/icons/people.svg" alt="people_icon" />
-                От&nbsp;1&nbsp;до&nbsp;6&nbsp;человек
-              </li>
-              <li class="excurcions__text">
-                <img
-                  src="/img/excursions/icons/hourglass.svg"
-                  alt="hourglass_icon"
-                />
-                12-13 часов
-              </li>
-            </ul>
-            <div class="excurcions__footer">
-              <p class="excurcions__price">250&nbsp;$</p>
-              <a href="#!" class="excurcions__link">Заказать экскурсию</a>
+        <div class="excursion">
+          <p class="excursion__number">03</p>
+          <div class="excursion__line">
+            <img
+              src="./img/excursions/1627286512_Batumi-Georgien 1.png"
+              alt=""
+              class="excursion__img"
+            />
+            <div class="excursion__content">
+              <h3 class="heading--excursion">
+                Обзорная экскурсия по&nbsp;Батуми
+              </h3>
+              <p class="excursion__desc">
+                Вы&nbsp;окунетесь в&nbsp;неспешный ритм нашего города,
+                почувствуете его колорит и&nbsp;дыхание. Узнаете много мифов
+                и&nbsp;городских легенд. Непринужденно познакомимся
+                с&nbsp;историей города, его архитектурой и&nbsp;религией. Выпьем
+                настоящий черный кофе приготовленный на&nbsp;песке, посмотрим
+                мастер-класс приготовления известного аджарского хачапури,
+                продегустируем вина и&nbsp;многое другое.
+              </p>
+              <ul class="excursion__list">
+                Входит в&nbsp;стоимость:
+                <li class="excursion__text">
+                  <img src="/img/excursions/icons/car.svg" alt="car_icon" />
+                  Трансферные расходы
+                </li>
+                <li class="excursion__text">
+                  <img src="/img/excursions/icons/hotel.svg" alt="hotel_icon" />
+                  Встреча и&nbsp;доставка в&nbsp;отель
+                </li>
+                <li class="excursion__text">
+                  <img
+                    src="/img/excursions/icons/people.svg"
+                    alt="people_icon"
+                  />
+                  От&nbsp;1&nbsp;до&nbsp;6&nbsp;человек
+                </li>
+                <li class="excursion__text">
+                  <img
+                    src="/img/excursions/icons/hourglass.svg"
+                    alt="hourglass_icon"
+                  />
+                  3-4 часа
+                </li>
+              </ul>
+              <div class="excursion__footer">
+                <p class="excursion__price">$60</p>
+                <a href="https://wa.me/995599918283" class="btn"
+                  >Заказать экскурсию</a
+                >
+              </div>
             </div>
           </div>
+        </div>
 
-          <p class="excurcions_number">06</p>
-          <img
-            src="./img/excursions/Adjara-National-Park-02 1.png"
-            alt=""
-            class="excurcions__img--img_6"
-          />
-          <div class="excurcions__content">
-            <h4 class="excurcions__header">Национальный парк Мтирала</h4>
-            <p class="excurcions__desc">
-              Национальный парк Мтирала -&nbsp; это шесть тысяч гектаров
-              субтропической природы с&nbsp;минеральными источниками, целебными
-              родниками, водопадами и&nbsp;озерцами. Вы насладитесь природными
-              пейзажами, чистым горным воздухом. Увидете колхидский лес, редкие
-              растения и&nbsp;животных, которые занесены в&nbsp;красную книгу.
-              В&nbsp;конце маршрута нас ждет необыкновенной красоты водопад
-              и&nbsp;горное озеро, в котором можно скупаться.
-            </p>
-            <ul class="excurcions__list">
-              Входит в&nbsp;стоимость:
+        <div class="excursion">
+          <p class="excursion__number">04</p>
+          <div class="excursion__line">
+            <img
+              src="./img/excursions/georgia-batumi-21509 1.png"
+              alt=""
+              class="excursion__img"
+            />
+            <div class="excursion__content">
+              <h3 class="heading--excursion">
+                Пешеходная экскурсия по&nbsp;Батуми
+              </h3>
+              <p class="excursion__desc">
+                В&nbsp;ходе экскурсии мы&nbsp;увидим с&nbsp;Вами все
+                достопримечательности нашего города. Площади Пьяца
+                и&nbsp;Европы, дом Сабаева, Стеллу Медеи с&nbsp;золотым руном,
+                Театральную плошадь и&nbsp;фонтан Нептуна, парк Чудес, башню
+                грузинского Алфавита, маяк, статуи Али и&nbsp;Нино.
+                Продегустируем грузинские вина и&nbsp;узнаем традиции
+                их&nbsp;изготовления. Прогуляемся по&nbsp;извилистым улочкам
+                старого города. Увидим католический храм пресвятой Богородицы,
+                церковь Николая Угодника, армянскую церковь Христа Всеспасителя.
+                Мечеть Орта Джаме. Посетим Батумский бульвар.
+              </p>
+              <ul class="excursion__list">
+                Входит в&nbsp;стоимость:
+                <li class="excursion__text">
+                  <img
+                    src="/img/excursions/icons/pedestrian.svg"
+                    alt="pedestrian_icon"
+                  />
+                  Пешеходная
+                </li>
+                <li class="excursion__text">
+                  <img
+                    src="/img/excursions/icons/people.svg"
+                    alt="people_icon"
+                  />
+                  От&nbsp;1&nbsp;до&nbsp;6&nbsp;человек
+                </li>
+                <li class="excursion__text">
+                  <img
+                    src="/img/excursions/icons/hourglass.svg"
+                    alt="hourglass_icon"
+                  />
+                  2-3 часа
+                </li>
+              </ul>
+              <div class="excursion__footer">
+                <p class="excursion__price">$40</p>
+                <a href="https://wa.me/995599918283" class="btn"
+                  >Заказать экскурсию</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
 
-              <li class="excurcions__text">
-                <img
-                  src="/img/excursions/icons/pedestrian.svg"
-                  alt="pedestrian_icon"
-                />
-                Пешеходная
-              </li>
-              <li class="excurcions__text">
-                <img src="/img/excursions/icons/hotel.svg" alt="hotel_icon" />
-                Встреча и&nbsp;доставка в&nbsp;отель
-              </li>
-              <li class="excurcions__text">
-                <img
-                  src="/img/excursions/icons/mountain.svg"
-                  alt="mountain_icon"
-                />
-                Подъем в&nbsp;горы
-              </li>
-              <li class="excurcions__text">
-                <img src="/img/excursions/icons/people.svg" alt="people_icon" />
-                От&nbsp;1&nbsp;до&nbsp;7&nbsp;человек
-              </li>
-              <li class="excurcions__text">
-                <img
-                  src="/img/excursions/icons/hourglass.svg"
-                  alt="hourglass_icon"
-                />
-                4-7 часов
-              </li>
-            </ul>
-            <div class="excurcions__footer">
-              <p class="excurcions__price">150&nbsp;$</p>
-              <a href="#!" class="excurcions__link">Заказать экскурсию</a>
+        <div class="excursion">
+          <p class="excursion__number">05</p>
+          <div class="excursion__line">
+            <img
+              src="./img/excursions/Kanon-Martvili 1.png"
+              alt=""
+              class="excursion__img"
+            />
+            <div class="excursion__content">
+              <h3 class="heading--excursion">
+                Пещера&nbsp;Прометея. Каньон&nbsp;Мартвили.
+                Монастырь&nbsp;Гелати
+              </h3>
+              <p class="excursion__desc">
+                В ходе эскурсии&nbsp;посетим карстовую пещеру Прометея.
+                Пешеходный туристический маршрут 1420 метров.&nbsp;8&nbsp;залов.
+                Увидим каньон Окаце. Длина которого 16&nbsp;километров. Посетим
+                монастырь Гелати, построенный в XII&nbsp;веке, &nbsp;котором
+                похоронено 23&nbsp;царя Грузии. Увидим храм Богородицы, церковь
+                Николая Угодника и Георгия Победоносца. Прикоснемся
+                к&nbsp;древней истории Грузии
+              </p>
+              <ul class="excursion__list">
+                Входит в&nbsp;стоимость:
+                <li class="excursion__text">
+                  <img src="/img/excursions/icons/car.svg" alt="car_icon" />
+                  Трансферные расходы
+                </li>
+                <li class="excursion__text">
+                  <img src="/img/excursions/icons/hotel.svg" alt="hotel_icon" />
+                  Встреча и&nbsp;доставка в&nbsp;отель
+                </li>
+                <li class="excursion__text">
+                  <img
+                    src="/img/excursions/icons/people.svg"
+                    alt="people_icon"
+                  />
+                  От&nbsp;1&nbsp;до&nbsp;6&nbsp;человек
+                </li>
+                <li class="excursion__text">
+                  <img
+                    src="/img/excursions/icons/hourglass.svg"
+                    alt="hourglass_icon"
+                  />
+                  12-13 часов
+                </li>
+              </ul>
+              <div class="excursion__footer">
+                <p class="excursion__price">$250</p>
+                <a href="https://wa.me/995599918283" class="btn"
+                  >Заказать экскурсию</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="excursion">
+          <p class="excursion__number">06</p>
+          <div class="excursion__line">
+            <img
+              src="./img/excursions/Adjara-National-Park-02 1.png"
+              alt=""
+              class="excursion__img"
+            />
+            <div class="excursion__content">
+              <h3 class="heading--excursion">Национальный парк Мтирала</h3>
+              <p class="excursion__desc">
+                Национальный парк Мтирала -&nbsp; это шесть тысяч гектаров
+                субтропической природы с&nbsp;минеральными источниками,
+                целебными родниками, водопадами и&nbsp;озерцами. Вы насладитесь
+                природными пейзажами, чистым горным воздухом. Увидете колхидский
+                лес, редкие растения и&nbsp;животных, которые занесены
+                в&nbsp;красную книгу. В&nbsp;конце маршрута нас ждет
+                необыкновенной красоты водопад и&nbsp;горное озеро, в котором
+                можно скупаться.
+              </p>
+              <ul class="excursion__list">
+                Входит в&nbsp;стоимость:
+
+                <li class="excursion__text">
+                  <img
+                    src="/img/excursions/icons/pedestrian.svg"
+                    alt="pedestrian_icon"
+                  />
+                  Пешеходная
+                </li>
+                <li class="excursion__text">
+                  <img src="/img/excursions/icons/hotel.svg" alt="hotel_icon" />
+                  Встреча и&nbsp;доставка в&nbsp;отель
+                </li>
+                <li class="excursion__text">
+                  <img
+                    src="/img/excursions/icons/mountain.svg"
+                    alt="mountain_icon"
+                  />
+                  Подъем в&nbsp;горы
+                </li>
+                <li class="excursion__text">
+                  <img
+                    src="/img/excursions/icons/people.svg"
+                    alt="people_icon"
+                  />
+                  От&nbsp;1&nbsp;до&nbsp;7&nbsp;человек
+                </li>
+                <li class="excursion__text">
+                  <img
+                    src="/img/excursions/icons/hourglass.svg"
+                    alt="hourglass_icon"
+                  />
+                  4-7 часов
+                </li>
+              </ul>
+              <div class="excursion__footer">
+                <p class="excursion__price">$150</p>
+                <a href="https://wa.me/995599918283" class="btn"
+                  >Заказать экскурсию</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section class="reviews">
-        <h5 class="reviews__title">Отзывы</h5>
+        <h2 class="heading">Отзывы</h2>
         <div class="reviews__grid">
-          <div class="reviews__first">
-            <img
-              src="./img/review/user1.jpg"
-              alt="user 1"
-              class="reviews__image"
-            />
-            <div class="reviews__header">
-              <div class="reviews__name">Инна</div>
-              <div class="reviews__location">Таллинн, Эстония</div>
+          <div class="review">
+            <div class="review__header">
+              <img
+                src="./img/review/user1.jpg"
+                alt="user 1"
+                class="review__image"
+              />
+              <div class="review__card">
+                <div class="review__name">Инна</div>
+                <div class="review__location">Таллинн, Эстония</div>
+              </div>
             </div>
 
-            <p class="reviews__text">
+            <p class="review__text">
               Отдыхали в&nbsp;Батуми с&nbsp;12&nbsp;по&nbsp;19&nbsp;сентября.
               Заказали три экскурсии у&nbsp;Александра . Ни&nbsp;разу
               не&nbsp;пожалели. Приятный в&nbsp;общении человек, великолепный
@@ -398,18 +471,20 @@
               раз.
             </p>
           </div>
-          <div class="reviews__secound">
-            <img
-              src="./img/review/user4.jpg"
-              alt="user 4"
-              class="reviews__image"
-            />
-            <div class="reviews__header">
-              <div class="reviews__name">Константин</div>
-              <div class="reviews__location">Самара, Россия</div>
+          <div class="review">
+            <div class="review__header">
+              <img
+                src="./img/review/user4.jpg"
+                alt="user 4"
+                class="review__image"
+              />
+              <div class="review__card">
+                <div class="review__name">Константин</div>
+                <div class="review__location">Самара, Россия</div>
+              </div>
             </div>
 
-            <p class="reviews__text">
+            <p class="review__text">
               Отличный гид, отличная экскурсия по&nbsp;Батуми. Хорошо поставлена
               речь, всегда держит во&nbsp;внимании, интересно слушать. Узнали
               много нового и&nbsp;увидели Батуми с&nbsp;его лучших сторон. Все
@@ -418,19 +493,21 @@
             </p>
           </div>
 
-          <div class="reviews__third">
-            <img
-              src="./img/review/user2.jpg"
-              alt="user 2"
-              class="reviews__image"
-            />
-            <div class="reviews__header">
-              <div class="reviews__name">Эмма</div>
-              <div class="reviews__location">Хайфа, Израиль</div>
+          <div class="review">
+            <div class="review__header">
+              <img
+                src="./img/review/user2.jpg"
+                alt="user 2"
+                class="review__image"
+              />
+              <div class="review__card">
+                <div class="review__name">Эмма</div>
+                <div class="review__location">Хайфа, Израиль</div>
+              </div>
             </div>
 
-            <p class="reviews__text">
-              Александр отличный гид,внимательный,эрудированный
+            <p class="review__text">
+              Александр отличный гид,внимательный, эрудированный&nbsp;
               и&nbsp;остроумный человек. Экскурсии с&nbsp;ним очень
               увлекательные, теплая и&nbsp;дружественная обстановка.
               Мы&nbsp;узнали много нового об&nbsp;истории Аджарии и&nbsp;Батуми.
@@ -439,18 +516,20 @@
             </p>
           </div>
 
-          <div class="reviews__fourth">
-            <img
-              src="./img/review/user3.jpg"
-              alt="user3"
-              class="reviews__image"
-            />
-            <div class="reviews__header">
-              <div class="reviews__name">Юлия</div>
-              <div class="reviews__location">Кирьят-Шмона́, Израиль</div>
+          <div class="review">
+            <div class="review__header">
+              <img
+                src="./img/review/user3.jpg"
+                alt="user3"
+                class="review__image"
+              />
+              <div class="review__card">
+                <div class="review__name">Юлия</div>
+                <div class="review__location">Нетания, Израиль</div>
+              </div>
             </div>
 
-            <p class="reviews__text">
+            <p class="review__text">
               Изумительные экскурсии с&nbsp;самым профессиональным
               и&nbsp;интересным гидом Александром. Заказывали три экскурсии
               заранее до&nbsp;приезда, не&nbsp;знали или успеем за&nbsp;неделю
@@ -461,61 +540,67 @@
           </div>
         </div>
 
-        <a href="" class="reviews__link">Больше отзывов</a>
+        <a href="" class="btn--reviews">Больше отзывов</a>
       </section>
       <section class="about">
         <img src="./img/about/Butnar.jpg" alt="butnar" class="about__img" />
-        <h6 class="about__header">Александр Бутнарь</h6>
-        <h7 class="about__title">Ваш персональный гид</h7>
-        <p class="about__desc">
-          Привет! Меня зовут Александр. Родился и&nbsp;вырос в&nbsp;Батуми.
-          Провожу индивидуальные экскурсии по&nbsp;Батуми и&nbsp;Аджарии.
-          Разбираюсь в&nbsp;истории Аджарии и&nbsp;Грузии. Знаю много мифов
-          и&nbsp;легенд, связанных с&nbsp;нашим краем. Заказав у&nbsp;меня
-          эскурсию, с&nbsp;удовольствием, поделюсь своими знаниями и&nbsp;сделаю
-          все, чтобы Ваш отдых стал незабываемым!
-        </p>
+        <div class="about__card">
+          <h3 class="heading--about_name">Александр Бутнарь</h3>
+          <h2 class="heading--about_guide">Ваш персональный гид</h2>
+          <p class="about__desc">
+            Привет! Меня зовут Александр. Родился и&nbsp;вырос в&nbsp;Батуми.
+            Провожу индивидуальные экскурсии по&nbsp;Батуми и&nbsp;Аджарии.
+            Разбираюсь в&nbsp;истории Аджарии и&nbsp;Грузии. Знаю много мифов
+            и&nbsp;легенд, связанных с&nbsp;нашим краем. Заказав у&nbsp;меня
+            эскурсию, с&nbsp;удовольствием, поделюсь своими знаниями
+            и&nbsp;сделаю все, чтобы Ваш отдых стал незабываемым!
+          </p>
 
-        <a href="" class="about__btn">Бесплатная консультация</a>
+          <a href="https://wa.me/995599918283" class="btn--consultation"
+            >Бесплатная консультация</a
+          >
 
-        <div class="about__footer">
-          <div class="about__column">
-            <h8 class="about__how">5 лет</h8>
-            <p class="about__text">опыт в проведении экскурсий</p>
-          </div>
-          <div class="about__column">
-            <h8 class="about__how">400</h8>
-            <p class="about__text">проведенных экскурсий</p>
-          </div>
-          <div class="about__column">
-            <h8 class="about__how">600</h8>
-            <p class="about__text">довольных клиентов</p>
+          <div class="about__footer">
+            <div class="about__column">
+              <h8 class="about__how">5 лет</h8>
+              <p class="about__text">опыт в проведении экскурсий</p>
+            </div>
+            <div class="about__column">
+              <h8 class="about__how">400</h8>
+              <p class="about__text">проведенных экскурсий</p>
+            </div>
+            <div class="about__column">
+              <h8 class="about__how">600</h8>
+              <p class="about__text">довольных клиентов</p>
+            </div>
           </div>
         </div>
       </section>
       <section class="footer">
-        <ul class="footer__title">
+        <ul class="heading--footer">
           Как с нами связаться?
           <li class="footer__number">Тел.: +995 599 91 82 83</li>
-          <li class="footer__mail">Почта: premium217@rambler.ru</li>
+          <li class="footer__mail">
+            Почта:<a href=""> premium217@rambler.ru</a>
+          </li>
         </ul>
         <div class="footer__social">
-          <a href=""
+          <a href="https://www.facebook.com/profile.php?id=100001189786866"
             ><img
               src="./img/footer/facebook.svg"
-              alt=""
+              alt="facebook icon"
               class="footer__facebook"
           /></a>
-          <a href=""
+          <a href="https://www.instagram.com/aleksandr_butnar/"
             ><img
               src="./img/footer/instagram.svg"
-              alt=""
+              alt="instagram icon"
               class="footer__instagram"
           /></a>
-          <a href=""
+          <a href="https://wa.me/995599918283"
             ><img
               src="./img/footer/whats app.svg"
-              alt=""
+              alt="whats app icon"
               class="footer__whats_app"
           /></a>
         </div>

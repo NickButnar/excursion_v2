@@ -1,0 +1,23 @@
+@media (min-width: 1025px) {
+  .slider {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slider {
+    display: block;
+  }
+  .slider__nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider__prev {
+    max-width: 40px;
+  }
+
+  .slider__next {
+    max-width: 40px;
+  }
+}

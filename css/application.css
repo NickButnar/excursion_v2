@@ -6,7 +6,7 @@
 @import url(./blocks/header.css);
 @import url(./blocks/desc.css);
 @import url(./blocks/product.css);
-@import url(./blocks/excursions.css);
+@import url(./blocks/excursion.css);
 @import url(./blocks/reviews.css);
 @import url(./blocks/about.css);
 @import url(./blocks/footer.css);
@@ -15,3 +15,9 @@
 /* Styles */
 
 @import url(./styles/swiper.css);
+@import url(./styles/slider.css);
+
+/* Typography */
+
+@import url(./typography/btn.css);
+@import url(./typography/heading.css);
