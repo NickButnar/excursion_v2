@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="/css/application.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;600;800;900&family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@200;400&display=swap"
+    />
 
     <title>Экскурсии по Батуми и Аджарии</title>
   </head>
@@ -53,50 +57,50 @@
         </div>
       </div>
 
-      <!-- swiper -->
+      <!-- slider -->
+      <section class="swapper">
+        <div class="slider">
+          <img
+            src="./img/slider/slide_1.jpg"
+            alt="slide 1"
+            class="slider__slide"
+          />
+          <img
+            src="./img/slider/slide_2.jpg"
+            alt="slide 2"
+            class="slider__slide"
+          />
+          <img
+            src="./img/slider/slide_3.jpg"
+            alt="slide 3"
+            class="slider__slide"
+          />
+          <img
+            src="./img/slider/slide_4.jpg"
+            alt="slide 4"
+            class="slider__slide"
+          />
+          <img
+            src="./img/slider/slide_5.jpg"
+            alt="slide 5"
+            class="slider__slide"
+          />
+          <img
+            src="./img/slider/slide_6.jpg"
+            alt="slide 6"
+            class="slider__slide"
+          />
+        </div>
 
-      <div class="slider">
-        <div class="swiper">
-          <img
-            src="./img/desc/new_batumi.jpg"
-            alt="new batumi"
-            class="swiper__slide"
-          />
-          <img
-            src="/img/desc/bridge.jpg"
-            alt="bridge in ajaria"
-            class="swiper__slide"
-          />
-          <img
-            src="/img/desc/batumi_sunset.jpg"
-            alt="batumi sunset"
-            class="swiper__slide"
-          />
-          <img
-            src="/img/desc/square.jpg"
-            alt="batumi square"
-            class="swiper__slide"
-          />
-          <img
-            src="/img/desc/village.jpg"
-            alt="village in ajaria"
-            class="swiper__slide"
-          />
-        </div>
-        <div class="slider__nav">
-          <img
-            src="./img/swiper/arrow-left.png"
-            alt="prev"
-            class="slider__prev"
-          />
-          <img
-            src="./img/swiper/arrow-right.png"
-            alt="next"
-            id="slider__next"
-            class="slider__next"
-          />
-        </div>
-      </div>
+        <p class="swapper__desc">
+          Аджария является одним из&nbsp;красивейших и&nbsp;древнейших уголков
+          Грузии. Край славится уникальным сочетанием природных факторов,
+          которые превращают эту область в&nbsp;настоящий рай на&nbsp;Земле.
+          Сочетание самобытных традиций, вкусной кухни, жиповисных
+          и&nbsp;красочных пейзжажей Аджарии превращает любой отдых
+          в&nbsp;запоминающееся на&nbsp;всю жизнь событие.
+        </p>
+      </section>
 
       <section id="product" class="product">
         <h2 class="heading">Наши экскурсии</h2>
@@ -607,6 +611,8 @@
       </section>
     </main>
 
-    <script src="./js/swiper.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

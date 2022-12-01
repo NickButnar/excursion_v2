@@ -2,7 +2,6 @@
 
 @import url(./blocks/reset.css);
 @import url(./blocks/wrapper.css);
-@import url(../fonts/Poppins/stylesheet.css);
 @import url(./blocks/header.css);
 @import url(./blocks/desc.css);
 @import url(./blocks/product.css);
@@ -11,11 +10,13 @@
 @import url(./blocks/about.css);
 @import url(./blocks/footer.css);
 @import url(./blocks/hidden.css);
+@import url(./blocks/swapper.css);
+@import url(./blocks/slider.css);
 
-/* Styles */
+/* Slick */
 
-@import url(./styles/swiper.css);
-@import url(./styles/slider.css);
+@import url(../js/slick/slick.css);
+@import url(../js/slick/slick-theme.css);
 
 /* Typography */
 

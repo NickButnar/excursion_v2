@@ -1,0 +1,12 @@
+.swapper__desc {
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+@media (min-width: 1025px) {
+  .swapper {
+    display: none;
+  }
+}
